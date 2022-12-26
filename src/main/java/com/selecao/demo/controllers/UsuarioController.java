@@ -43,4 +43,5 @@ public class UsuarioController {
     public Optional<Usuario> atualizarUsuario(@PathVariable Usuario usuario, @RequestBody Long id){
         return usuarioService.atualizarUsuario(usuario, id);
     }
+
 }

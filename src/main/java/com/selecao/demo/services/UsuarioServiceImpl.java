@@ -28,6 +28,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     public Usuario criarUsuario(Usuario usuario){
         return usuarioRepository.save(usuario);
     }
+
     @Override
     public Optional<Usuario> deletarUsuario(Usuario usuario, Long id){
         Optional<Usuario> usuarioDeletar = findById(id);
