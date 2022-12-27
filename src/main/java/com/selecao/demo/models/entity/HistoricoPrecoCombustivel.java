@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "HistoricoPrecoCombustivel")
@@ -22,7 +23,7 @@ public class HistoricoPrecoCombustivel implements Serializable {
     private String combustivel;
 
     @Column(name = "data")
-    private LocalDateTime data;
+    private Date data;
 
     @Column(name = "preco")
     private Double preco;
